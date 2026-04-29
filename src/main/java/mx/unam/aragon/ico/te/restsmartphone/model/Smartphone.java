@@ -1,9 +1,15 @@
 package mx.unam.aragon.ico.te.restsmartphone.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "smartphone")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Smartphone {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
